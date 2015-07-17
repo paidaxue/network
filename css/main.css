@@ -6,7 +6,6 @@
 .head{
 	
 	height:80px;
-	background:red;
 	border-bottom:1px solid #400040;
 	
 	
@@ -31,9 +30,44 @@ li{font-size:20px;}
 }
 
 
+.head ul li{ 
+	line-height:40px; 
+	text-align:center;
+	position:relative; 
+	float:left; 
+	padding:0 5px;
+}
+
+
+ .head ul li a{ 
+ 	color:#000; 
+ 	display:block; 
+ 	width:90px;
+}
+
+ .head ul li a:hover{ 
+ 	color:#ff0000; 
+ 	display:block; 
+ 	width:90px;
+}
+
+.head ul li ul{
+	width:90px; 
+	display:none;
+	position:absolute; 
+}
+
+.head ul li:hover ul{
+	display:block;
+}
+
+.head ul li ul li{ 
+ 	float:none;
+ 	
+	background:rgba(199,0,0,0.9);
+}
 .n1{
 	display:block;
-	background:green;
 	with:255;
 	height:37;
 	float:left;
@@ -45,7 +79,6 @@ li{font-size:20px;}
 	display:block;
 	with:255;
 	height:37;
-	background:green;
 	float:right;
 	margin:20px 20px auto 0;
 	
@@ -57,10 +90,7 @@ li{font-size:20px;}
 	
 }
 
-.n2 li a{
-	with:10px;
-	heigth:10px;
-}
+
 
 
 
