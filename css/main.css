@@ -1,27 +1,23 @@
+
 *{
 	margin:0;
 	padding:0;
 }
 
 .head{
-	
-	height:80px;
+	height:70px;
 	border-bottom:1px solid #400040;
-	
-	
 }
 
 a{
-	
 	text-decoration:none;
 }
-
 ul{
 	list-style-type:none;
 }
-
-
-li{font-size:20px;}
+li{
+	font-size:20px;
+}
 
 .head ul li{
 	display:inline-block;
@@ -42,13 +38,19 @@ li{font-size:20px;}
  .head ul li a{ 
  	color:#000; 
  	display:block; 
- 	width:90px;
+}
+
+.nav1 li a{
+	 width:90px;
 }
 
  .head ul li a:hover{ 
  	color:#ff0000; 
  	display:block; 
- 	width:90px;
+}
+
+.nav1 li a:hover{
+	width:90px;
 }
 
 .head ul li ul{
@@ -63,16 +65,15 @@ li{font-size:20px;}
 
 .head ul li ul li{ 
  	float:none;
- 	
 	background:rgba(254,254,254,0.9);
 }
-.n1{
+.nav1{
 	display:block;
 	float:left;
 	margin:20px 0 0 20px;
 }
 
-.n2{
+.nav2{
 	
 	display:block;
 	float:right;
@@ -80,9 +81,16 @@ li{font-size:20px;}
 	
 }
 
-.n2 li{
-	padding:10px;
-	
+.nav2 li{
+	margin:0 3px ;
+}
+
+.head .nav2 li a{
+	color:red;
+}
+
+.head .nav2 li a:hover{
+	color:black;
 }
 
 .project{
@@ -103,12 +111,6 @@ li{font-size:20px;}
 	padding:5px;
 }
 
-.projectname{
-	padding:0 0 3px 3px;
-	margin:0 0 3px 3px;
-	
-	
-}
 .projectname a{
 	display:block;
 	font-size:16px;
