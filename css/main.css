@@ -64,12 +64,10 @@ li{font-size:20px;}
 .head ul li ul li{ 
  	float:none;
  	
-	background:rgba(199,0,0,0.9);
+	background:rgba(254,254,254,0.9);
 }
 .n1{
 	display:block;
-	with:255;
-	height:37;
 	float:left;
 	margin:20px 0 0 20px;
 }
@@ -77,19 +75,45 @@ li{font-size:20px;}
 .n2{
 	
 	display:block;
-	with:255;
-	height:37;
 	float:right;
 	margin:20px 20px auto 0;
 	
 }
 
 .n2 li{
-	line-aling
 	padding:10px;
 	
 }
 
+.project{
+	margin:20px 20px 10px 20px;
+	float:left;
+	width:184px;
+	height:160px;
+	border-bottom:1px solid #c0c0c0;
+}
+
+.project:hover .projectname a{
+	background:#eee;
+	
+} 
+
+
+.picturlink{
+	padding:5px;
+}
+
+.projectname{
+	padding:0 0 3px 3px;
+	margin:0 0 3px 3px;
+	
+	
+}
+.projectname a{
+	display:block;
+	font-size:16px;
+	
+}
 
 
 
