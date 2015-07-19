@@ -19,13 +19,6 @@ li{
 	font-size:20px;
 }
 
-.head ul li{
-	display:inline-block;
-	with:300px;
-	heigh:100px;
-}
-
-
 .head ul li{ 
 	line-height:40px; 
 	text-align:center;
@@ -35,46 +28,45 @@ li{
 }
 
 
- .head ul li a{ 
+ .head .nav1 li a{ 
  	color:#000; 
  	display:block; 
+	width:90px;
 }
 
-.nav1 li a{
-	 width:90px;
+.head .nav1 .nav1_1{
+	background:url(../img/2.png) no-repeat right;
 }
 
- .head ul li a:hover{ 
+ .head .nav1 li a:hover{ 
  	color:#ff0000; 
- 	display:block; 
 }
 
 .nav1 li a:hover{
 	width:90px;
 }
 
-.head ul li ul{
-	width:90px; 
+.head .nav1 li ul{
 	display:none;
 	position:absolute; 
 }
 
-.head ul li:hover ul{
+.head .nav1 li:hover ul{
 	display:block;
 }
 
-.head ul li ul li{ 
+.head .nav1 li ul li{ 
  	float:none;
 	background:rgba(254,254,254,0.9);
 }
+
 .nav1{
-	display:block;
 	float:left;
 	margin:20px 0 0 20px;
 }
 
+
 .nav2{
-	
 	display:block;
 	float:right;
 	margin:20px 20px auto 0;
@@ -112,6 +104,7 @@ li{
 }
 
 .projectname a{
+	color:black;
 	display:block;
 	font-size:16px;
 	
