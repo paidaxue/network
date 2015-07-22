@@ -6,20 +6,22 @@ jQuery(document).ready(function($){
 	
 	
 	$('.project').bind("click",function(){
-		if($(".projectshow").val()==0){
-			$(".projectshow").show();
-			$(".projectshow").val(1);
-		}else{
-			$(".projectshow").hide();
-			$(".projectshow").val(0);
-			
+		if($("#projectshow").val()==0){
+			$("#projectshow").show();
+			$("#projectshow").val(1);
 		}
 	});
 	
 	$('.closedetails').bind("click",function(){
-		$(".projectshow").hide();
-		$(".projectshow").val(0);
+		$("#projectshow").hide();
+		$("#projectshow").val(0);
 	});
 	
- 
+	$('.project').bind("click",function(){
+		var $number=0;
+		$number=$(this).parent().attr("id");
+		$id="#"+$number;
+		$('#projectshow').insertAfter($id);
+	});
+	 
 });
