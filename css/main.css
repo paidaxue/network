@@ -4,11 +4,13 @@
 	padding:0;
 }
 
+
+
 .head{
 	background:#ffffff;
 	z-index:999;
 	position:fixed;
-	width:100%;
+	width:1350px;
 	height:70px;
 	border-bottom:1px solid #400040;
 }
@@ -16,11 +18,9 @@
 a{
 	text-decoration:none;
 }
+
 ul{
 	list-style-type:none;
-}
-li{
-	font-size:20px;
 }
 
 .head ul li{ 
@@ -46,9 +46,6 @@ li{
  	color:#ff0000; 
 }
 
-.nav1 li a:hover{
-	width:90px;
-}
 
 .head .nav1 li ul{
 	display:none;
@@ -73,7 +70,7 @@ li{
 .nav2{
 	display:block;
 	float:right;
-	margin:20px 20px auto 0;
+	margin:20px 20px 0 0;
 	
 }
 
@@ -90,29 +87,25 @@ li{
 }
 
 .content{
-	
-	width:100%;
+	width:1350px;
 	height:200px;
 }
 
-
 .project{
-	margin:110px 20px 10px 20px;
+	margin:110px 20px 0 20px;
 	float:left;
 	width:184px;
 	height:160px;
 	border-bottom:1px solid #c0c0c0;
 }
 
+.picturlink img{
+	width:100%;
+}
+
 .project:hover .projectname a{
 	background:#eee;
-	
 } 
-
-
-.picturlink{
-	padding:5px;
-}
 
 .projectname a{
 	color:black;
@@ -123,23 +116,20 @@ li{
 
 
 #projectshow{
+	clear:both;
+	width:1350px;
 	display:none;
 	background:red;
-	margin-top:120px;
-	position:relative;
+
 	
 }
 
 .details{
-	position:fixed;
 	width:180px;
-	height:280px;
 	background:blue;
 }
 
 .closedetails{
-	width:180px;
-	height:30px;
 	background:green;
 }
 
@@ -148,11 +138,6 @@ li{
 	cursor:pointer;
 }
 
-
-.show{
-	margin:0 0 0 190px;
-	float:righ;
-}
 
 
 
