@@ -1,13 +1,13 @@
 jQuery(document).ready(function($){
  
 	
-	function goDiv(div) {
-		var a = $("#"+div).offset().top;
-		alert(a);
-		$("html,body").animate({scrollTop:a}, 'slow'); 
-		alert($(window).scrollTop());
-		}
-	
+	//滚动条滚动到底部时加载内容；
+	function load(){		
+		var $num=0;
+		$num=$(".content", "body").length;		
+		$ids = "#"+$num;
+//		$($ids).after("<div id='test' title='hi' style='background:red' style='clear:both'>我是调用函数创建的</div>");
+	}
 	
 	
 	$('.project').bind("click",function(){
@@ -32,49 +32,35 @@ jQuery(document).ready(function($){
 		var $number=0;
 		$number=$(this).parent().attr("id");
 		$id="#"+$number;
-		goDiv($number);
+
+		//将指定id的div滚动到可视化窗口顶部；
+		a = $('.content').height()*$number;
+		$("html,body").animate({scrollTop:a}, 'slow'); 
+		
 		$('#projectshow').insertAfter($id);
 	});
 	
 
 
-	function load(){
-		
-		var $num=0;
-		$num=$(".content", "body").length;
-		
-		$ids = "#"+$num;
-		
-//		alert($ids);
-		
-//		$($ids).after("<div id='test' title='hi' style='background:red' style='clear:both'>我是调用函数创建的</div>");
-		
-//		$($ids).css('background','red');
-		
-
-	}
-
-	
 	$(window).scroll(function(){ 
+		
 		lazyheight = $(window).height()+$(window).scrollTop();
-//		alert($('#projectshow').height());
 		if($(document).height()-100 <= lazyheight){
 			load();
 		}
 	});
 	
+	
+	
 	$(window).scroll(function(){ 
 //		alert($('#projectshow').height());
 //		alert($('.details').height());
-		
 //		alert($(".details").scrollTop());
-		
 //		alert($(window).scrollTop());
 		
 		  x=$(".details").offset();
-//		  alert(x.top);
 		  y=$("#projectshow").offset();
-//		  alert(y.top);
+
 		  z=x.top-y.top;
 		  
 		  t = x.top-$(window).scrollTop();
@@ -95,13 +81,13 @@ jQuery(document).ready(function($){
 
 		  
 		  
-		  if(detheight == $('#projectshow').height()){
-			  $(".details").css('position','absolute');
-			  $(".details").css('top',$('#projectshow').height());
+//		  if(detheight == $('#projectshow').height()){
+//			  $(".details").css('position','absolute');
+//			  $(".details").css('top',$('#projectshow').height());
 //			  d=$('.details').offset();
 //			  dd = d.top;
 			  
-		  }
+//		  }
 //		  alert(dd);
 //		  alert(x.top);
 	});
