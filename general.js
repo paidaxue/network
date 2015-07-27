@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 	function load(){		
 		var $num=0;
 		$num=$(".content", "body").length;		
-		$ids = "#"+$num;
+		$ids = "#con"+$num;
 //		$($ids).after("<div id='test' title='hi' style='background:red' style='clear:both'>我是调用函数创建的</div>");
 	}
 	
@@ -29,14 +29,15 @@ jQuery(document).ready(function($){
 	});
 	
 	$('.project').bind("click",function(){
-		var $number=0;
 		$number=$(this).parent().attr("id");
 		$id="#"+$number;
-
-		//将指定id的div滚动到可视化窗口顶部；
-		a = $('.content').height()*$number;
-		$("html,body").animate({scrollTop:a}, 'slow'); 
+		$num = $number.substr($number.length-1,1);
 		
+		//将指定id的div滚动到可视化窗口顶部；
+		a = $('.content').height()*$num;
+		$("html,body").animate({scrollTop:a}, 'slow');
+		
+		//将展开内容添加到指定div后面；
 		$('#projectshow').insertAfter($id);
 	});
 	
