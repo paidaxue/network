@@ -7,6 +7,7 @@
 
 
 .head{
+	top:0;
 	background:#ffffff;
 	z-index:999;
 	position:fixed;
@@ -91,6 +92,9 @@ ul{
 	height:200px;
 }
 
+#con0{
+	margin-top:90px;
+}
 
 .project{
 	margin:0 20px 0 20px;
