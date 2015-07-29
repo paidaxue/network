@@ -11,7 +11,7 @@
 	background:#ffffff;
 	z-index:999;
 	position:fixed;
-	width:1350px;
+	width:1344px;
 	height:70px;
 	border-bottom:1px solid #400040;
 }
@@ -88,8 +88,8 @@ ul{
 }
 
 .content{
-	width:1350px;
-	height:200px;
+	width:1344px;
+	height:190px;
 }
 
 #con0{
@@ -97,10 +97,10 @@ ul{
 }
 
 .project{
-	margin:0 20px 0 20px;
+	margin:0 20px;
 	float:left;
 	width:184px;
-	height:160px;
+	height:180px;
 	border-bottom:1px solid #c0c0c0;
 }
 
@@ -130,7 +130,7 @@ ul{
 .show{
 	width:729px;
 	height:486px;
-	margin:0 auto;
+	margin:0 auto 15px;
 }
 
 .show img{
